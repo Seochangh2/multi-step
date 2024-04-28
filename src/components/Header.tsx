@@ -14,8 +14,6 @@ const Header: React.FC = () => {
     <Container>
       {location.pathname !== "/registeredStep" &&
         StepData.map((info, idx) => {
-          // 마지막 단계 헤더 스킵
-          if (StepData.length - 1 === idx) return null;
           // 완료한 스텝은 체크
           return (
             <StepViewer key={idx}>
